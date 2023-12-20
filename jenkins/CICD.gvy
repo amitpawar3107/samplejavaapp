@@ -33,7 +33,7 @@ pipeline {
                }
             }			
         }
-        sstage('codecoverage') {
+        stage('codecoverage') {
 	   steps {
                 echo 'unittest..'
 	        sh script: '/opt/maven/bin/mvn verify'
